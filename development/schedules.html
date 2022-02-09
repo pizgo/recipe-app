@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Zaplanuj Jedzonko</title>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <script src="https://kit.fontawesome.com/f222718ae4.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="schedules_body">
+
+<header id="main_app" class="header">
+    <section class="header_section app__header">
+        <h1 class="header_logo">
+            <a href="#" class="header_logo-1">Zaplanuj
+                <span class="header_logo-2">Jedzonko</span>
+            </a>
+        </h1>
+        <div class="app_profile">
+            <a href=""><span class="app_profile-name">Imię </span><i
+                    class="far fa-user-circle app_profile-icon"></i></a>
+        </div>
+    </section>
+</header>
+
+<section class="app_container">
+
+    <aside class="app_aside">
+        <a href="./app.html" class="aside_btn aside_btn1">Pulpit</a>
+        <a href="./recipes.html" class="aside_btn aside_btn2">Przepisy</a>
+        <a href="./schedules.html" class="aside_btn aside_btn3">Plany</a>
+    </aside>
+
+    <main class="app_main">
+
+        <section class="newPlan recipes_container hidden">
+            <header class="newPlan__header">
+                <h1 class="newPlan__title">Nowy plan</h1>
+                <button class="newPlan__btn">Zapisz i zamknij</button>
+            </header>
+            <div class="newPlan__add">
+                <div class="add__container">
+                    <h2 class="add__title">Nazwa planu</h2>
+                    <textarea style="resize: none" id="addPlan" class="add__textarea" rows="1" cols="100"
+                              placeholder="plan jarski na bezmięsny tydzień"></textarea>
+                </div>
+
+                <div class="add__container">
+                    <h2 class="add__title">Opis planu</h2>
+                    <textarea style="resize: none" id="addDescription" class="add__textarea" rows="5" cols="100"
+                              placeholder="lorem ..."></textarea>
+                </div>
+
+                <div class="add__container">
+                    <h2 class="add__title">Numer tygodnia</h2>
+                    <textarea class="add__weekNumber" id="weekNumber" cols="1" rows="1"></textarea>
+                </div>
+
+            </div>
+            <table class="addPlan__table">
+                <thead>
+                <tr class="addPlan__thead">
+                    <th></th>
+                    <th>śniadanie</th>
+                    <th> drugie śniadanie</th>
+                    <th>zupa</th>
+                    <th>drugie danie</th>
+                    <th>kolacja</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th class="weekName">Poniedziałek</th>
+                    <td><select name="" class="monday">
+                    </select></td>
+                    <td><select name="" class="monday">
+
+                    </select></td>
+                    <td><select name="" class="monday">
+
+                    </select></td>
+                    <td><select name="" class="monday">
+
+                    </select></td>
+                    <td><select name="" class="monday">
+
+                    </select></td>
+                </tr>
+                <tr>
+                    <th class="weekName">Wtorek</th>
+                    <td><select name="" class="tuesday">
+                    </select></td>
+                    <td><select name="" class="tuesday">
+
+                    </select></td>
+                    <td><select name="" class="tuesday">
+
+                    </select></td>
+                    <td><select name="" class="tuesday">
+                    </select></td>
+                    <td><select name="" class="tuesday">
+
+                    </select></td>
+                </tr>
+                <tr>
+                    <th class="weekName">środa</th>
+                    <td><select name="" class="wednesday">
+
+                    </select></td>
+                    <td><select name="" class="wednesday">
+
+                    </select></td>
+                    <td><select name="" class="wednesday">
+
+                    </select></td>
+                    <td><select name="" class="wednesday">
+
+                    </select></td>
+                    <td><select name="" class="wednesday">
+
+                    </select></td>
+                </tr>
+                <tr>
+                    <th class="weekName">Czwartek</th>
+                    <td><select name="" class="thursday">
+
+                    </select></td>
+                    <td><select name="" class="thursday">
+
+                    </select></td>
+                    <td><select name="" class="thursday">
+
+                    </select></td>
+                    <td><select name="" class="thursday">
+
+
+                    </select></td>
+                    <td><select name="" class="thursday">
+
+                    </select></td>
+                </tr>
+                <tr>
+                    <th class="weekName">piątek</th>
+                    <td><select name="" class="friday">
+
+                    </select></td>
+                    <td><select name="" class="friday">
+
+                    </select></td>
+                    <td><select name="" class="friday">
+
+                    </select></td>
+                    <td><select name="" class="friday">
+
+                    </select></td>
+                    <td><select name="" class="friday">
+
+                    </select></td>
+                </tr>
+                <tr>
+                    <th class="weekName">sobota</th>
+                    <td><select name="" class="saturday">
+
+                    </select></td>
+                    <td><select name="" class="saturday">
+
+                    </select></td>
+                    <td><select name="" class="saturday">
+
+                    </select></td>
+                    <td><select name="" class="saturday">
+
+                    </select></td>
+                    <td><select name="" class="saturday">
+
+                    </select></td>
+                </tr>
+                <tr>
+                    <th class="weekName">niedziela</th>
+                    <td><select name="" class="sunday">
+
+                    </select></td>
+                    <td><select name="" class="sunday">
+
+                    </select></td>
+                    <td><select name="" class="sunday">
+
+                    </select></td>
+                    <td><select name="" class="sunday">
+
+                    </select></td>
+                    <td><select name="" class="sunday">
+
+                    </select></td>
+                </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+
+        <section class="schedules_container">
+            <header class="schedules_header">
+                <h1 class="schedules_header-title">Lista Planów</h1>
+                <span id="add_schedules" class="fas fa-plus-square"></span>
+            </header>
+
+            <table class="schedules_table">
+                <tr class="schedules_tr">
+                    <td class="schedules_title schedules_td-1">Id</td>
+                    <td class="schedules_title schedules_td-2">Nazwa</td>
+                    <td class="schedules_title schedules_td-3">Opis</td>
+                    <td class="schedules_title schedules_td-4">Tydzień</td>
+                    <td class="schedules_title schedules_td-5">Akcje</td>
+                </tr>
+
+                <tr class="schedules_tr">
+                    <td class="schedules_td-1">1</td>
+                    <td class="schedules_td-2">Plan jarski na bezmięsny tydzień</td>
+                    <td class="schedules_td-3">Pojęcie kuchnia wegetariańska określa pożywienie, które ani nie zawiera
+                        mięsa, ani
+                        nie zostało przygotowane na bazie pochodzącej z mięsa (np. na rosole drobiowym).
+                        Laktoowowegetarianie
+                        (najczęściej spotykany typ wegetarian w zachodnim świecie) spożywają nabiał, laktowegetarianie
+                        wykluczają
+                        jaja, ale nie inne produkty nabiałowe
+                    </td>
+                    <td class="schedules_td-4">46</td>
+                    <td class="schedules_td-5">
+                        <span class="far fa-edit ing-edit"></span>
+                        <span class="fas fa-trash-alt ing-remove"></span>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <script src="js/schedules.js"></script>
+
+    </main>
+</section>
+</body>
+
+</html>

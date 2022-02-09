@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Zaplanuj Jedzonko</title>
+  <script src="https://kit.fontawesome.com/021741ffad.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+
+  <header id="main_app" class="header">
+    <section class="header_section app__header">
+      <h1 class="header_logo">
+        <a href="#" class="header_logo-1">Zaplanuj
+          <span class="header_logo-2">Jedzonko</span>
+        </a>
+      </h1>
+      <div class="app_profile">
+        <a href=""><span class="app_profile-name">Imię </span><i class="far fa-user-circle app_profile-icon"></i></a>
+      </div>
+    </section>
+  </header>
+
+  <section class="app_container">
+
+    <aside class="app_aside">
+      <a href="./app.html" class="aside_btn aside_btn1">Pulpit</a>
+      <a href="./recipes.html" class="aside_btn aside_btn2">Przepisy</a>
+      <a href="./schedules.html" class="aside_btn aside_btn3">Plany</a>
+    </aside>
+
+    <main class="app_main">
+      <section class="hello">
+        <div class="hello__container">
+          <h1 class="hello__title">Witaj,</h1>
+          <h2 class="hello__subtitle">wygląda na to, że jesteś tutaj <br />pierwszy raz!</h2>
+          <form class="hello__form">
+            <label for="name"></label>
+            <input type="text" name="name" id="name" placeholder="tutaj wpisz jak masz na imię">
+            <button type="submit" class="hello__btn">Gotowe!</button>
+          </form>
+          <p class="hello__text">Podaj nam swoje imię, a my zorganizujemy <br />dla Ciebie naszą aplikację :)</p>
+        </div>
+      </section>
+      <!-- przygotowany container dla wszystkich widgetów, w tym "dodaj przepis" i "dodaj plan"-->
+      <div class="widget__container">
+        <div class="widget">
+          <div class="widget__box widget__box-1">
+            <span class="fas fa-info-circle widget__img widget__img-1"></span>
+            <div id="widget_text-1" class="widget__text widget__text-1">Masz już {...} przepisów, nieźle!</div>
+            <button class="fas fa-window-close widget__remove widget__remove-1"></button>
+          </div>
+
+          <div class="widget__box widget__box-2">
+            <span class="fas fa-exclamation-circle widget__img widget__img-2"></span>
+            <div id="widget_text-2" class="widget__text widget__text-2">Pamiętaj, aby dodać plan!</div>
+            <button class="fas fa-window-close widget__remove widget__remove-2"></button>
+          </div>
+
+          <div class="widget__box widget__box-3">
+            <span class="fas fa-check-circle widget__img widget__img-3"></span>
+            <div id="widget_text-3" class="widget__text widget__text-3">Świetnie, że jesteś! Udanego planowania i
+              smacznego :)</div>
+            <button class="fas fa-window-close widget__remove widget__remove-3"></button>
+          </div>
+        </div>
+      </div>
+      <div class="weeklyTable__container">
+        <h2 class="weeklyTable__title">Twój plan na {nr_tygodnia} tydzień:</h2>
+        <table class="weeklyTable__table">
+          <thead>
+            <tr>
+              <th>Poniedziałek</th>
+              <th>Wtorek</th>
+              <th>Środa</th>
+              <th>Czwartek</th>
+              <th>Piątek</th>
+              <th>Sobota</th>
+              <th>Niedziela</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>śniadanie</td>
+              <td>śniadanie</td>
+              <td>śniadanie</td>
+              <td>śniadanie</td>
+              <td>śniadanie</td>
+              <td>śniadanie</td>
+              <td>śniadanie</td>
+            </tr>
+            <tr>
+              <td>drugie śniadanie</td>
+              <td>drugie śniadanie</td>
+              <td> drugie śniadanie</td>
+              <td>rugie śniadanie</td>
+              <td>drugie śniadanie</td>
+              <td>drugie śniadanie</td>
+              <td>drugie śniadanie</td>
+            </tr>
+            <tr>
+              <td>zupa</td>
+              <td>zupa</td>
+              <td>zupa</td>
+              <td>zupa</td>
+              <td>zupa</td>
+              <td>zupa</td>
+              <td>zupa</td>
+            </tr>
+            <tr class="aaa">
+              <td>drugie danie</td>
+              <td>drugie danie</td>
+              <td>drugie danie</td>
+              <td>rugie danie</td>
+              <td>drugie danie</td>
+              <td>drugie danie</td>
+              <td>drugie danie</td>
+            </tr>
+            <tr>
+              <td>kolacja</td>
+              <td>kolacja</td>
+              <td>kolacja</td>
+              <td>kolacja</td>
+              <td>kolacja</td>
+              <td>kolacja</td>
+              <td>kolacja</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="weeklyTable__move">
+          <div class="weeklyTable__previous"><i class="fas fa-angle-double-left"></i><span>poprzedni</span></div>
+          <div class="weeklyTable__next"><span>następny</span><i class="fas fa-angle-double-right"></i></div>
+        </div>
+      </div>
+
+    </main>
+  </section>
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
+

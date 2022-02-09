@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Zaplanuj Jedzonko</title>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <script src="https://kit.fontawesome.com/f222718ae4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+<header id="main_app" class="header">
+    <section class="header_section app__header">
+        <h1 class="header_logo">
+            <a href="#" class="header_logo-1">Zaplanuj
+                <span class="header_logo-2">Jedzonko</span>
+            </a>
+        </h1>
+        <div class="app_profile">
+            <a href=""><span class="app_profile-name">Imię </span><i class="far fa-user-circle app_profile-icon"></i></a>
+        </div>
+    </section>
+</header>
+
+<section class="app_container">
+
+    <aside class="app_aside">
+        <a href="./app.html" class="aside_btn aside_btn1">Pulpit</a>
+        <a href="./recipes.html" class="aside_btn aside_btn2">Przepisy</a>
+        <a href="./schedules.html" class="aside_btn aside_btn3">Plany</a>
+    </aside>
+
+    <main class="app_main">
+
+        <div class="recipes-list_container">
+            <div class="recipes-list_header">
+                <h2 class="recipes-list_title">Lista przepisów</h2>
+                <span id="add_recipe" class="fas fa-plus-square"></span>
+            </div>
+            <div class="recipes-list_body">
+                <div class="recipes-list-body_header">
+                    <div class="recipes-list_id recipes-list-body-title">ID</div>
+                    <div class="recipes-list_name recipes-list-body-title">Name</div>
+                    <div class="recipes-list_description recipes-list-body-title">Opis</div>
+                    <div class="recipes-list_action recipes-list-body-title">Akcje</div>
+                </div>
+                <div class="recipes-list-body_box">
+
+                </div>
+            </div>
+        </div>
+            <section class="recipes_container hidden">
+
+                <div class="recipes_header">
+                    <h1 class="recipes_header-title">Nowy Przepis</h1>
+                    <button id="save-recipe" class="recipes_header-btn">Zapisz i zamknij</button>
+                </div>
+
+                <div class="recipes_data">
+                    <h2 class="recipes_data-title-1">Nazwa przepisu</h2>
+                    <textarea id="recipe-name" class="recipes_data-textarea-1" rows="5" cols="40" placeholder="Title..."></textarea>
+
+                    <h2 class="recipes_data-title-2">Opis przepisu</h2>
+                    <textarea id="recipe-description" class="recipes_data-textarea-2" rows="5" cols="40"
+                        placeholder="Your recipe description..."></textarea>
+
+                    <div id="error-message-recipe"></div>
+                </div>
+
+                <div class="recipes_container_instruction_ingredients">
+
+                    <section class="recipes_instruction">
+                        <h3 class="recipes_instruction-title">Instrukcje</h3>
+                        <div class="recipes_instruction_div">
+                            <textarea id="recipe-instruction" class="recipes_instruction_textarea"
+                                placeholder="Write instruction..."></textarea>
+                            <span id ="add_instruction" class="fas fa-plus-square"></span>
+                        </div>
+                        <div id="error-message-inst"></div>
+
+                        <div class="recipes_instruction-order">
+                            <ol id="instruction_list">
+            <!--                    <li class="recipes_instruction-li">-->
+            <!--                        bbbbb-->
+            <!--                        <span class="far fa-edit inst-edit"></span>-->
+            <!--                        <span class="fas fa-trash-alt inst-remove"></span>-->
+            <!--                    </li>-->
+                            </ol>
+                        </div>
+                    </section>
+
+                    <section class="recipes_instruction">
+                        <h3 class="recipes_instruction-title">Składniki</h3>
+                        <div class="recipes_instruction_div">
+                            <textarea id="recipe-ingredients" class="recipes_instruction_textarea"
+                                placeholder="Write ingredients ..."></textarea>
+                            <span id ="add_ingredient" class="fas fa-plus-square"></span>
+                        </div>
+                        <div id="error-message-ing"></div>
+
+                        <div class="recipes_ingredients-order">
+                            <ul id="ingredients_list">
+            <!--                    <li class="recipes_ingredients-li">-->
+            <!--                        XXXXXXX-->
+            <!--                            <span class="far fa-edit ing-edit"></span>-->
+            <!--                            <span class="fas fa-trash-alt ing-remove"></span>-->
+            <!--                    </li>-->
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </section>
+    </main>
+
+</section>
+
+    <script src="./js/recipes.js"></script>
+
+</section>
+
+</body>
+
+</html>
